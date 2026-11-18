@@ -12,7 +12,7 @@ void loop()
 {
   // Membaca status tombol (LOW artinya sedang ditekan)
   int statusTombol = digitalRead(pinTombol);
-
+// button dipasang ke pin analog untuk button di bagian anode 
   if (statusTombol == LOW) {
     digitalWrite(pinLampu, HIGH); // Nyalakan lampu saat tombol ditekan
   } else {
